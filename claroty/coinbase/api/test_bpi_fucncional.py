@@ -3,7 +3,6 @@ from datetime import datetime
 import requests
 from globals import BASE_URL, JSON_PATH, CHART_PATH, CHART_FILE,CHART_COUNTER_FUNC
 
-
 class TestBtcToUsd():
     def test_bpi_response_code(self):
         response = requests.get(BASE_URL+"prices/BTC-USD/spot")

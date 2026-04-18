@@ -39,7 +39,7 @@ class TestBtcToUsd():
 
         mail_as_dict= {
             "to": "kobyd100@gmail.com",
-            "subject" : "Max rate for BPI found at coinbase",
+            "subject" : "Max rate for BPI found at Coinbase",
             "attachment" : f'{CHART_PATH}{CHART_FILE}',
             "content" : f"Hi,\nFollowing your request, Max value for BPI found.\nThe value is: {max_rate}"
         }

@@ -33,7 +33,6 @@ class MailUtils():
         self.msg.set_content(mail_as_dict['content'])
         self.logger.debug(f" mail details : {mail_as_dict}")
 
-
         with open(mail_as_dict["attachment"], 'rb') as f:
             file_data = f.read()
             file_name = f.name

@@ -7,7 +7,6 @@ from globals import BASE_URL, JSON_PATH, CHART_PATH, CHART_FILE, CHART_COUNTER_E
 class TestBtcToUsd():
 
 
-
     def test_bpi_process_e2e(self,configure_test):
 
         logger,mail_utils,chart_utils = configure_test

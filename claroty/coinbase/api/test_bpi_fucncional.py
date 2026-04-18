@@ -35,13 +35,13 @@ class TestBtcToUsd():
 
     def test_get_max_bpi_and_send_mail(self,configure_test):
         logger,mail_utils,chart_utils = configure_test
-        max_rate = mail_utils.get_max_price()
+        max_bpi = mail_utils.get_max_price()
 
         mail_as_dict= {
             "to": "kobyd100@gmail.com",
             "subject" : "Max rate for BPI found at Coinbase",
             "attachment" : f'{CHART_PATH}{CHART_FILE}',
-            "content" : f"Hi,\nFollowing your request, Max value for BPI found.\nThe value is: {max_rate}"
+            "content" : f"Hi,\nFollowing your request, Max value for BPI found.\nThe value is: {max_bpi}"
         }
 
         mail_utils.send_gmail(mail_as_dict)
